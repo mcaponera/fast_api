@@ -10,3 +10,5 @@ recebe os modelos do banco de dados, modelamos nosso banco usando o `registry` d
         # transforma uma função em um gerador playlist introdução a corrotinas live 51
         yield session
 ```
+- `relationship`:
+define como as tabelas interagem, o argumento `back-populates` permite a associação bidirecional, ou seja acessar o usuário pelas tarefas e o contário, o argumento `cascade` define o que acontece com as tarefa qndo o usuário é deletado.
