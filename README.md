@@ -12,3 +12,8 @@ recebe os modelos do banco de dados, modelamos nosso banco usando o `registry` d
 ```
 - `relationship`:
 define como as tabelas interagem, o argumento `back-populates` permite a associação bidirecional, ou seja acessar o usuário pelas tarefas e o contário, o argumento `cascade` define o que acontece com as tarefa qndo o usuário é deletado.
+
+### pydantic
+- `model_dump`: método do `BaseModel`, permite exportar o modelo para um dicionário
+- `exclude_unset`: quando `True` apenas os campos selecionados explicitamente definidos serão incluídos no dicionário resultante.
+- `setattb`: função embutida para definir valor de um atributo em um objeto
